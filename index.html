@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Space+Mono&display=swap"
+        rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div class="container__header">
+            <div class="header">
+                    <img class="logo" src="img/logo.png">
+                
+                
+                <h1 class="title">Encriptador de textos</h1> 
+            </div>  
+        </div>
+    </header>
+    <main>
+        <article class="container">
+            <section class="left" id="left">
+                <textarea class="inputtextarea" id="textoInput" placeholder="Ingrese el texto aquí" autofocus onkeypress="return ( (event.charCode == 32 || event.charCode >= 97 && event.charCode <= 122 ))"></textarea>
+                <div class="content_botones">
+                    <span class="info">
+                        <img src="img/exclamacion.png" alt="advertencia" />
+                    </span>
+                    <div class="botones">
+                        <button id="button__encriptar" class="button__encriptar">Encriptar</button>
+                        <button id="button__desencriptar" class="button__desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="right" id="rigth">
+                <img id="nene" class="nene" src="img/nene.png" alt="Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar.">
+                <textarea id="textoFinal" class="textoFinal" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="textoInfo" class="info">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="button__copiar bn_ocultar" id="button__copiar">Copiar</button>
+            </section>
+        </article>
+    </main>
+    <footer class="footer ">
+        <p class="creador">Realizado por 
+            <a href="https://Roxiki.github.io/" target="_blank" class="usuario">
+                &copy Roxana Ferreyra 2024
+            </a>
+        </p>
+        <div>
+            <a href="https://github.com/Roxiki" target="_blank">
+                <img  class="links" src="img/github.png" />
+            </a>
+            
+            <a href="https://www.linkedin.com/in/roxana-ferreyra/" target="_blank">
+                <img class="links" src=" img/linkedin.png" />
+            </a>
+        </div>
+    </footer>
+    <script src="js.script"></script>
+</body>
+
+</html>
